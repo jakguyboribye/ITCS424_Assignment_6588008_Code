@@ -12,14 +12,25 @@
 
 ## Pages Implemented
 
+## Figma Design
+![Figma Design](implementation/images/figmadesign.png)
+
 ### 1. Page Name: aboutme  
 **Description:** What is the purpose or functionality of this page?
 
 This page currently serves as a placeholder for the actual "About Me" content, which is implemented by another group member. It contains a button that navigates the user to the To-Do List page. The main purpose of this page is to fulfill the navigation requirement of the assignment by demonstrating the use of a BottomNavigationBar to switch between the home page and this page.
+
+![Home Page](implementation/images/homepage.png)
+![About Me Page](implementation/images/aboutmepage.png)
+
 ### 2. Page Name: todolist  
 **Description:** What is the purpose or functionality of this page?
 
 Most of the functionality is in this page. It displays a list of tasks assigned to parents, showing each task’s title, date, and assigned role. Users can tap on a task title to view more details. There is also a button to add new tasks, which opens a modal bottom sheet for inputting task details. Each task can be marked as complete or incomplete by toggling its status.
+
+![To Do Page](implementation/images/todolistpage.png)
+![Create Task Item](implementation/images/createtaskitem.png)
+![To Do Page After](implementation/images/createtaskitem.png)
 
 ---
 
