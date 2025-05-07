@@ -39,6 +39,8 @@ There were several unexpected challenges during development. First, I initially 
 
 The toggle for marking a to-do item as complete or incomplete works fine, but it's quite basic. I feel it would benefit from animations or more better icons to improve user experience. Additionally, since there is no dedicated "more info" page designed in flutter, I used a dialog box to display the task details as a temporary solution.
 
+Also, for some reason, I can't type Thai in the emulator. So I'm not sure if Thai works for creating a task item.
+
 ---
 
 ## Reflection
