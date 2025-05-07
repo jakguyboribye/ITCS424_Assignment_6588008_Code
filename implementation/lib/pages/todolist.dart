@@ -8,6 +8,9 @@ class ToDoList extends StatefulWidget {
   State<ToDoList> createState() => ToDoListState();
 }
 
+// To Do List Page, mapping all the to do items and providing modalbottomsheet to create a new item
+// Items can be toggled done/not done
+// Tap on the item's title to see more details 🤓☝️
 class ToDoListState extends State<ToDoList> {
   int _selectedIndex = 3;
 
@@ -30,21 +33,7 @@ class ToDoListState extends State<ToDoList> {
     },
   ];
 
-  final thaiMonths = [
-    'มกราคม',
-    'กุมภาพันธ์',
-    'มีนาคม',
-    'เมษายน',
-    'พฤษภาคม',
-    'มิถุนายน',
-    'กรกฎาคม',
-    'สิงหาคม',
-    'กันยายน',
-    'ตุลาคม',
-    'พฤศจิกายน',
-    'ธันวาคม',
-  ];
-
+  //controller for each fields in the creation 🤓☝️
   TextEditingController taskController = TextEditingController();
   TextEditingController caretakerController = TextEditingController();
   TextEditingController dateController = TextEditingController();
@@ -152,6 +141,7 @@ class ToDoListState extends State<ToDoList> {
                                         actions: [
                                           TextButton(
                                             onPressed: () {
+                                              //return 🤓☝️
                                               Navigator.of(context).pop();
                                             },
                                             child: Text(
@@ -182,6 +172,7 @@ class ToDoListState extends State<ToDoList> {
                               horizontal: 30,
                               vertical: 6,
                             ),
+                            //changing color based on role 🤓☝️
                             decoration: BoxDecoration(
                               color:
                                   item['caretaker'] == 'คุณพ่อ'
@@ -259,6 +250,7 @@ class ToDoListState extends State<ToDoList> {
                 ),
               ),
               onPressed: () {
+                //ModalBottomSheet popup for creating new items 🤓☝️
                 showModalBottomSheet(
                   context: context,
                   isScrollControlled: true,
@@ -461,6 +453,7 @@ class ToDoListState extends State<ToDoList> {
                                   String location = locationController.text;
                                   String notes = notesController.text;
 
+                                  //create a new item 🤓☝️
                                   Map<String, dynamic> newTodoItem = {
                                     'title': task,
                                     'caretaker': caretaker,
@@ -469,11 +462,11 @@ class ToDoListState extends State<ToDoList> {
                                     'About': notes,
                                     'isDone': false,
                                   };
-
+                                  //add it to list 🤓☝️
                                   setState(() {
                                     todoItems.add(newTodoItem);
                                   });
-
+                                  //return 🤓☝️
                                   Navigator.pop(context);
                                 },
                                 style: ElevatedButton.styleFrom(
@@ -516,6 +509,8 @@ class ToDoListState extends State<ToDoList> {
           ),
         ],
       ),
+
+      //Bottom Navigation (Only Home and About me works) 🤓☝️
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
@@ -548,6 +543,7 @@ class ToDoListState extends State<ToDoList> {
   }
 }
 
+//Custom dropdown for choosing caretaker 🤓☝️
 class Caretakerdropdown extends StatefulWidget {
   final Function(String) onChanged;
 

@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// Placeholder Home Page 🤓☝️
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
 
@@ -39,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
       Text(
-        'Home Page',
+        'NAG Home Page',
         style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
       ),
       Text(
@@ -49,6 +50,8 @@ class _MyHomePageState extends State<MyHomePage> {
     ],
   ),
 ),
+
+//Bottom Navigation (Only Home and About me page will navigate) 🤓☝️
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),

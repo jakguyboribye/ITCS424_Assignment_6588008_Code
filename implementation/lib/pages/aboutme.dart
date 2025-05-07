@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../main.dart';
 import 'todolist.dart';
 
+// This Page is just a placeholder for the actual about me page 🤓☝️
 class AboutMePage extends StatefulWidget{
     const AboutMePage({super.key});
 
@@ -29,6 +30,8 @@ class AboutMePageState extends State<AboutMePage>{
     ],
   ),
 ),
+
+//Bottom Navigation (Only Home and About me page will navigate) 🤓☝️
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
