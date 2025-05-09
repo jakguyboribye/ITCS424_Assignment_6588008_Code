@@ -30,7 +30,7 @@ Most of the functionality is in this page. It displays a list of tasks assigned 
 
 ![To Do Page](implementation/images/todolistpage.png)
 ![Create Task Item](implementation/images/createtaskitem.png)
-![To Do Page After](implementation/images/createtaskitem.png)
+![To Do Page After](implementation/images/todolistpageafter.png)
 
 ---
 
