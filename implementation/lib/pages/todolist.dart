@@ -169,7 +169,7 @@ class ToDoListState extends State<ToDoList> {
                           const SizedBox(width: 10),
                           Container(
                             padding: const EdgeInsets.symmetric(
-                              horizontal: 30,
+                              horizontal: 20,
                               vertical: 6,
                             ),
                             //changing color based on role 🤓☝️
